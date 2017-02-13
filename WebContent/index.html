@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>民生银行</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body id="index">
+    <header>
+        <h1 title="中国民生银行"><img src="images/logo.png" width="80%"></h1>
+    </header>
+<main class="main">
+    <article class="section1">
+        <img src="images/img.jpg" width="130" height="130" class="avactor">
+        <h1>客服姓名</h1>
+        <p><img src="images/star.png" width="25" height="25"></p>
+        <p class="color-gray">下吕浦支行<a href="#"><i class="position"></i></a></p>
+    </article>
+    <article class="section2 box">
+        <div class="flex">
+            <img src="images/big-erweima.jpg">
+            <p>二维码</p>
+        </div>
+        <div class="flex">
+            <img src="images/big-erweima.jpg">
+            <p>二维码</p>
+        </div>
+    </article>
+    <article class="section3 box">
+        <div class="flex"><a href="#">产品中心</a></div>
+        <div class="flex"><a href="javascript:;"  class="makephone">我要拨号</a></div>
+      
+    </article>   
+</main>
+<div class="cover"  style="display:none;">
+        <div class="back-cover"></div>
+        <div class="close"></div>
+        <div class="telebox">
+            <p><a href="#">057767498976</a></p>
+            <p><a href="#">145788978500</a></p>
+            <div class="erweima">
+                <img src="images/big-erweima.jpg" width="80%">
+                <p class="color-gray">二维码</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(function(){
+    	$(".makephone").click(function(){
+            $(".cover").show();
+            var $thisheight=$(".telebox").height()/2;
+            $(".telebox").css({"margin-top":"-"+$thisheight+"px"})
+        })
+        $(".close").click(function(){
+            $(".cover").hide();
+        })
+        $(".back-cover").click(function(){
+            $(".cover").hide();
+        })
+    })
+</script>
